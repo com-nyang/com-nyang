@@ -9,7 +9,6 @@
 기본 정보:
   - 한세사이버보안고등학교 졸업
   - 클라우드, 보안, DevOps, MLOps 분야에 관심 있는 개발자
-  - Portfolio: https://wonjjani.github.io/com_nyang/
 
 경험:
   - Pabilica 인턴 (2026.02 ~ 2026.04)
