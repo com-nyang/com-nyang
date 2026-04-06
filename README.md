@@ -38,7 +38,7 @@
       - A Lifecycle-Based MLOps Data Protection Framework
     - 정보보호학회 동계 학술대회 논문 Accept 및 구두 발표
       - MLOps 환경의 데이터 보호를 위한 프레임워크
-    - 2025 지방기능경기대회 클라우드 부문 2위
+    - 2025 지방기능경기대회 클라우드 부문 3위
 
   2024년:
     - 제8회 금융보안원 논문공모전 참가
