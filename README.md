@@ -1,6 +1,7 @@
 <div align="center">
   <h3>Wonchan Lee</h3>
   <p>Cloud · Security · DevOps · MLOps ☁️</p>
+  <sub>Birth 2007</sub>
 </div>
 
 <br />
