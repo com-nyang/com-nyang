@@ -25,7 +25,7 @@ Cloud · Security · DevOps · MLOps
 
 ## 인턴·대외활동
 
-### Pabilica 초기 창업 멤버
+### Pabilica 초기 멤버
 - 기간: 2026.02 ~ 2026.04 (3개월)
 
 Peeple 프로젝트 - Flutter 모바일 앱/웹 개발
