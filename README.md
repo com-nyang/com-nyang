@@ -6,6 +6,12 @@
 
 <br />
 
+<div align="center">
+  <img src="https://ghchart.rshah.org/FF69B4/com-nyang" alt="com-nyang's Github chart" />
+</div>
+
+<br />
+
 ```yaml
 기본 정보:
   - 한세사이버보안고등학교 졸업
