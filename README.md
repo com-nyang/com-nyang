@@ -19,7 +19,7 @@
   - 자체 모의해킹 및 보안 대응 경험
 
 교육:
-  - KITRI BoB(Best of the Best) 14기 컨설팅 트랙
+  - KITRI BoB(Best of the Best) 14기 보안 컨설팅 트랙
   - 화이트햇 스쿨 2기
 
 주요 활동:
