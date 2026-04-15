@@ -15,14 +15,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update activity
-        run: |
-          echo "Last update: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .activity
-
-      - name: Commit and push
+      - name: Random commits
         run: |
           git config user.name "com_nyang"
           git config user.email "luke@pabilica.com"
-          git add .activity
-          git diff --cached --quiet || git commit -m "chore: daily commit"
+
+          COUNT=$(( RANDOM % 5 + 1 ))  # 1~5 랜덤
+          echo "Today's commit count: $COUNT"
+
+          for i in $(seq 1 $COUNT); do
+            echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC') [$i/$COUNT]" > .activity
+            git add .activity
+            git commit -m "chore: daily commit ($i/$COUNT)"
+            sleep 1
+          done
+
           git push
