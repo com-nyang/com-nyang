@@ -20,7 +20,7 @@ jobs:
           git config user.name "com_nyang"
           git config user.email "luke@pabilica.com"
 
-          COUNT=$(( RANDOM % 5 + 1 ))  # 1~5 랜덤
+          COUNT=$(( RANDOM % 11 + 1 ))  # 1~11 랜덤
           echo "Today's commit count: $COUNT"
 
           for i in $(seq 1 $COUNT); do
