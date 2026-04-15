@@ -1,0 +1,28 @@
+name: Daily Grass
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # 매일 KST 09:00 (UTC 00:00)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update activity
+        run: |
+          echo "Last update: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .activity
+
+      - name: Commit and push
+        run: |
+          git config user.name "com_nyang"
+          git config user.email "luke@pabilica.com"
+          git add .activity
+          git diff --cached --quiet || git commit -m "chore: daily commit"
+          git push
