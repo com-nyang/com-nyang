@@ -18,7 +18,7 @@ jobs:
       - name: Random commits
         run: |
           git config user.name "com_nyang"
-          git config user.email "luke@pabilica.com"
+          git config user.email "wonjjani@gmail.com"
 
           COUNT=$(( RANDOM % 11 + 1 ))  # 1~11 랜덤
           echo "Today's commit count: $COUNT"
