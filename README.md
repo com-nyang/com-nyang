@@ -41,6 +41,8 @@
       - Epistemic Debt Compiler (https://github.com/com-nyang/Epistemic_Debt_Compiler)
     - STDev Science Hackathon 2026 우수상
       - Chemical Bibimbab (https://github.com/com-nyang/chemical_bibimbab)
+    - AI Hack Camp 2026 국립중앙과학관장상 (장려상)
+      - 챱츄팀 - QR-Shield (https://github.com/com-nyang/QR_Shield-Mono)
 
   2025년:
     - 차세대 보안리더 양성 프로그램 BEST OF THE BEST 14기 컨설팅 트랙 수료
