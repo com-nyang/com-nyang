@@ -32,7 +32,7 @@
   Frontend:
     - React Native, Expo, TypeScript, React, TanStack Query
   Backend:
-    - Go, Gin, PostgreSQL, Redis
+    - Go, Gin, Python, Django, Rust, PostgreSQL, Redis
   Cloud/DevOps:
     - AWS ECS, EKS, ECR, VPC, S3, CloudFront
     - Terraform, Kubernetes, Kustomize, GitHub Actions
