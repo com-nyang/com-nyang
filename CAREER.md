@@ -1,15 +1,38 @@
 # Career
 
-Cloud · Security · DevOps · MLOps
+Cloud · Security · DevOps · Backend · MLOps
 
-최종 수정일: 2026년 04월 06일
+최종 수정일: 2026년 06월 28일
+
+## 프로필 요약
+
+Go 백엔드와 React Native/React 기반 프론트엔드 개발을 함께 수행하며, 모바일 앱, Admin Web, 백엔드 API가 연결된 서비스 기능을 end-to-end로 개발한 경험이 있습니다. 크루 기반 커뮤니티/미션 인증 플랫폼에서 미션 생성, 인증 제출, 자동 승인/수동 검수, 하루 1회 인증 제한, 인증 게시판 권한 제어 등 주요 정책 기능을 API 계약 설계부터 프론트 상태 처리까지 연동했습니다.
+
+또한 기존 ECS 중심 인프라를 EKS/Kubernetes 기반 구조로 전환하기 위한 인프라 아키텍처를 설계하고, Terraform과 Kustomize를 활용해 ECR, VPC, EKS, IRSA, Gateway API routing, Kubernetes manifest, migration Job, image tag 자동 반영 스크립트 등 운영 배포를 위한 IaC 기반 구성을 설계 및 구현했습니다.
 
 ## 스킬
 - AWS
 - Cloud
 - 보안
 - DevOps
+- Backend
 - MLOps
+- Go
+- Gin
+- PostgreSQL
+- Redis
+- React Native
+- Expo
+- React
+- TypeScript
+- TanStack Query
+- Terraform
+- Kubernetes
+- EKS
+- Kustomize
+- GitHub Actions
+- IRSA
+- Gateway API
 
 ## 학력
 - 2026 졸업 / 한세사이버보안고등학교
@@ -19,27 +42,59 @@ Cloud · Security · DevOps · MLOps
 ### Pabilica 초기 멤버
 - 기간: 2026.02 ~ 2026.04 (3개월)
 
-Peeple 프로젝트 - Flutter 모바일 앱/웹 개발
+#### Peeple - 크루 기반 커뮤니티/미션 인증 플랫폼
 
-- Meetup, 패칭, 알림, 커뮤니티 등 핵심 사용자 기능 전반의 클라이언트 개발 및 운영 안정화 담당
-- 모임 신청/승인/거절 흐름, 모집 완료/종료 판정 로직, 참여 가능 모임 우선 정렬 등 Meetup 기능 고도화
-- 채팅 탭 구조 개선, 미읽음 상태 동기화, 중복 전송 방지, 신고 기능 추가 등 실시간 채팅 UX 및 안정성 개선
-- 알림 읽음 상태 즉시 반영, 삭제된 리소스 예외 처리, 사용자 유형별 라우팅 분기 구현으로 알림 신뢰도 향상
-- 커뮤니티/아티클 영역에 Optimistic UI, 댓글 정렬 및 중복 등록 방지 적용으로 반응성과 사용성 개선
-- 로그인/온보딩 경쟁 상태, 비로그인 딥링크 접근, 게스트 복귀 경로 등 라우팅/인증 플로우 안정화
-- 영문 주소 노출, 용어 통일, 번역 실패 처리 개선 등 다국어 품질 개선
+모바일 앱, Admin Web, 백엔드 API를 포함한 크루 운영 및 미션 인증 서비스 개발에 참여했습니다.
 
-Peeple 호스트 웹 / 랜딩 페이지 개발
+#### 기술 스택
 
-- Next.js 기반 호스트 웹에서 모임 생성 UI, 정책/약관 메뉴 구조, 모바일 미리보기 화면 등 운영자 기능 개선
-- 랜딩 페이지 정렬/재조회 동작, 이미지 비율 유지, 타입 오류 수정 등 서비스 페이지 품질 보완
+- React Native, Expo, TypeScript, React, TanStack Query
+- Go, Gin, PostgreSQL, Redis, S3
+- AWS ECS, CloudFront
+- Terraform, Kubernetes, EKS, Kustomize, GitHub Actions
 
-Peeple 인프라 / 운영
+#### 주요 기여
 
-- GitHub Actions 및 프로덕션 DB 마이그레이션 이슈 수정으로 배포 안정성 향상
-- 운영 환경 변수 및 스키마 충돌 문제를 해결해 배포 파이프라인 신뢰성 강화
-- Paple PG 결제 연동 레퍼런스 문서를 작성하여 결제 기능 도입 및 협업 효율 지원
-- 제3회 커리어 익스체인지 행사 개발 지원
+- 크루 기반 커뮤니티/미션 인증 서비스의 모바일 앱, Admin Web, 백엔드 API 개발에 참여
+- 회원가입 약관 동의 플로우 개선
+- 서비스 이용약관, 개인정보 처리방침, 마케팅 정보 수신 동의, 위치기반 서비스 이용 동의 상세 화면 연결
+- 약관 항목별 네비게이션 및 동의 상태 처리 개선
+- 사진, 텍스트, 위치 기반 인증 방식별 미션 제출 UI 및 API 연동
+- 미션 생성 시 승인 방식, 하루 인증 제한, 인증 게시판 공개 여부 등 정책 설정값 전송
+- 미션 상세/홈 화면에서 인증 상태, 완료 횟수, 참여자 상태 동기화 처리
+- `approval_mode` 기반 자동 승인/검수 대기 상태 처리
+- 인증 제출 응답의 `approved`, `pending`, `rejected` 상태에 따른 UI 분기
+- 자동 승인 시 검수 대기 문구를 제거하고 완료 상태를 즉시 반영
+- `daily_limit_enabled`, `viewer_submitted_today`, `viewer_can_submit_proof` 응답 기반 인증 버튼 상태 처리
+- 중복 인증 시 `409 DAILY_PROOF_LIMIT_EXCEEDED` 에러 처리 및 데이터 refetch 적용
+- 제한 비활성화 미션에서는 같은 날 여러 번 인증 가능하도록 분기
+- `board_visible`, `viewer_can_view_proof_board`, `proof_board_block_reason` 기반 인증 게시판 노출 제어
+- 일반 참여자와 호스트/운영진 권한을 분리해 검수 탭/인증 게시판 접근 제어
+- 미션 인증 검수 목록, 승인/반려, 검수 카운트 등 운영자용 관리 흐름 연동
+- 자동 승인 미션이 검수 대기 목록에 노출되지 않도록 백엔드 정책과 프론트 UI 상태 정합성 확인
+- 미션 생성, 인증 제출, 인증 상태 조회, 검수 상태 관리 API 응답 필드 정의 및 프론트 연동
+- 모바일/Admin 화면에서 필요한 viewer 권한 필드 및 상태 필드 설계 요청
+- 백엔드 응답 shape 변경에 맞춰 타입, 매핑, UI 상태 처리 반영
+- UIDatePicker 날짜 범위 충돌로 발생한 iOS 네이티브 크래시 분석
+- 최소/최대 날짜 보정 및 iOS DatePicker 처리 개선으로 크래시 방지
+
+#### Peeple 인프라 / IaC
+
+- 기존 ECS 중심 인프라 설계를 Kubernetes/EKS 기반 구조로 전환하기 위한 인프라 아키텍처 설계
+- Terraform 기반으로 ECR, VPC, EKS, AWS Load Balancer Controller IRSA, 서비스별 IRSA 모듈 구성
+- Kustomize 기반 Kubernetes manifest 구조를 설계하고 base/overlay 방식으로 stg 환경 배포 구성 분리
+- login, crew, main, community, shortform, admin-api 등 Go 백엔드 서비스를 Kubernetes Deployment, Service, ServiceAccount 단위로 구성
+- AWS Load Balancer Controller와 Gateway API 기반 external routing 구조 설계 및 서비스별 path routing 정의
+- AWS Secrets Manager와 IRSA를 활용한 서비스별 secret 접근 권한 분리 구조 설계
+- RDS migration을 app startup에서 분리하고 Kubernetes Job 기반으로 별도 실행하는 migration 전략 설계
+- Terraform output을 활용해 Kubernetes values/image 설정을 자동 반영하는 스크립트 작성
+- GitHub Actions 기반 배포 자동화 흐름 및 image tag 반영 구조 설계
+
+#### 이력서용 요약
+
+- Go 백엔드와 React Native/React 기반 프론트엔드 개발을 함께 수행하며, 크루 기반 미션 인증 플랫폼에서 모바일 앱, Admin Web, 백엔드 API를 아우르는 기능 개발에 참여했습니다.
+- 미션 생성, 인증 제출, 자동 승인/수동 검수, 하루 1회 인증 제한, 인증 게시판 권한 제어 등 핵심 정책 기능을 API 계약부터 프론트 상태 처리까지 연동했습니다.
+- Terraform과 Kustomize를 활용해 기존 ECS 중심 인프라를 EKS/Kubernetes 기반 구조로 전환하기 위한 ECR, VPC, EKS, IRSA, Gateway API routing, migration Job, image 자동 반영 스크립트 등 IaC 기반 운영 배포 구성을 설계 및 구현했습니다.
 
 ### 한세사이버보안고등학교 교내활동
 - 기간: 2023.09 ~ 2026.01 (2년 5개월)
