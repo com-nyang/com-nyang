@@ -19,7 +19,7 @@
   - 서비스 기능 개발부터 인프라 설계 및 IaC 기반 구성까지 경험
 
 경험:
-  - Pabilica 초기 멤버 (2026.02 ~ 2026.04)
+  - Pabilica 초기 멤버 (2026.02 ~ 현재)
   - Peeple 프로젝트 모바일 앱, Admin Web, 백엔드 API 개발
   - Peeple 프로젝트 EKS/Kubernetes 전환을 위한 IaC 기반 인프라 구성 설계
   - 교내 서비스 한움 앱 개발 및 운영
